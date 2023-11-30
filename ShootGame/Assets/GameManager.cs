@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float currentTime;
     [SerializeField] private float maxTime;
 
+    // Sets current time to 30
     private void Awake()
     {
         currentTime = maxTime;
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Logs Game over (STILL NEEDS TO END GAME)
     private void GameOver()
     {
         Debug.Log("Game Is Over");
