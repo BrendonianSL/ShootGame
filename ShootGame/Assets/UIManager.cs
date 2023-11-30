@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private GameObject GameOverScreen;
+
+    private void Start ()
     {
-        
+        GameOverScreen.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EndScreen ()
     {
-        
+        GameOverScreen.SetActive(true);
     }
 }

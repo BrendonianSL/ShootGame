@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     // Logs Game over (STILL NEEDS TO END GAME)
     private void GameOver()
     {
+        Time.timeScale = 0f;
         Debug.Log("Game Is Over");
     }
 }
