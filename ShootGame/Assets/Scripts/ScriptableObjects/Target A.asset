@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 446c562636aefe34f808f92ab9599ed0, type: 3}
-  m_Name: Target B
+  m_Name: Target A
   m_EditorClassIdentifier: 
-  health: 1
-  pointValue: 200
-  isMobile: 1
+  currentHealth: 0
+  maxHealth: 1
+  pointValue: 100
+  isMobile: 0
