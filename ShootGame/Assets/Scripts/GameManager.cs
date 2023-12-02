@@ -61,6 +61,8 @@ public class GameManager : MonoBehaviour
         isPaused = !isPaused; //This is a vice versa statement. All this means is that it sets the isPaused value to the opposite of what it currently is
         if(isPaused)
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f;
             uiManager.pauseScreen.SetActive(true);
             //Reveal Cursor & Stop Accepting Player Input
@@ -68,9 +70,10 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1f;
             uiManager.pauseScreen.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             //Hide Cursor & Start Accepting Input
         }
-
     }
     
     private void GameOver() //Private Function Responsible For Ending The Game
