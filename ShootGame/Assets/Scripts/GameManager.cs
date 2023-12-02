@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         currentTime -= Time.deltaTime; //Decreases Time For Every Second Passing
-        Debug.Log(currentTime);
 
         if(currentTime <= 0)
         {
