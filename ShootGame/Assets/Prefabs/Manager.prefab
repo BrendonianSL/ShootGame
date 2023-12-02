@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6352932892666071161}
   - component: {fileID: 1597693724726655116}
+  - component: {fileID: 6587971145898810625}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -46,3 +47,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTime: 0
   maxTime: 30
+  score: 0
+  uiManager: {fileID: 6587971145898810625}
+--- !u!114 &6587971145898810625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6441937540443731135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca6634aaabcf7d34aaf092a2607d3cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameoverScreen: {fileID: 0}
+  pauseScreen: {fileID: 0}
+  scoreText: {fileID: 0}
+  timeText: {fileID: 0}
