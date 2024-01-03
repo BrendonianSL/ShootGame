@@ -26,12 +26,13 @@ public class PlayerInput : MonoBehaviour
 
     private void Awake()
     {
-        //playerCamera = camera.GetComponent<PlayerCamera>();
+        
     }
 
     private void Update()
     {
         KeyboardInput();
+        CameraInput();
     }
 
     public void MovementInput()

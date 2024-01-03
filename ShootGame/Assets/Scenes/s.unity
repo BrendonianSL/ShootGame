@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 182181417}
   - component: {fileID: 182181416}
   - component: {fileID: 182181415}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1524,6 +1524,7 @@ GameObject:
   - component: {fileID: 1526652740}
   - component: {fileID: 1526652739}
   - component: {fileID: 1526652738}
+  - component: {fileID: 1526652741}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1605,6 +1606,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1526652741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526652737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec4fd59d039f514ca22d3355255d164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraPosition: {fileID: 1637065650}
+--- !u!4 &1637065650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4390891887366532945, guid: 5d3b0146c13bbeb4d9cce4bdb9bec15b, type: 3}
+  m_PrefabInstance: {fileID: 7744300723237691262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1640706118 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2497719803685193458, guid: 5d3b0146c13bbeb4d9cce4bdb9bec15b, type: 3}
+  m_PrefabInstance: {fileID: 7744300723237691262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1721597631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,6 +1957,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6523286403444641215, guid: 5d3b0146c13bbeb4d9cce4bdb9bec15b, type: 3}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523286403444641215, guid: 5d3b0146c13bbeb4d9cce4bdb9bec15b, type: 3}
+      propertyPath: groundDrag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523286403444641215, guid: 5d3b0146c13bbeb4d9cce4bdb9bec15b, type: 3}
+      propertyPath: orientation
+      value: 
+      objectReference: {fileID: 1640706118}
+    - target: {fileID: 6523286403444641215, guid: 5d3b0146c13bbeb4d9cce4bdb9bec15b, type: 3}
+      propertyPath: playerHeight
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6687893324665844566, guid: 5d3b0146c13bbeb4d9cce4bdb9bec15b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1949,7 +1989,6 @@ SceneRoots:
   - {fileID: 1526652740}
   - {fileID: 29713098}
   - {fileID: 7330409581649081289}
-
   - {fileID: 1022752371}
   - {fileID: 7744300723237691262}
   - {fileID: 1721597635}
