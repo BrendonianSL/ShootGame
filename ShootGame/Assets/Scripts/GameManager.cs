@@ -18,6 +18,12 @@ public class GameManager : MonoBehaviour
     private void Awake() //Gets Called BEFORE Game Start
     {
         currentTime = maxTime; //Sets Current Time Equal To Maximum Time
+        Cursor.visible = false; //Hides Cursor
+    }
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -63,11 +69,15 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0f;
             uiManager.pauseScreen.SetActive(true);
+            Cursor.visible = true; //Reveals Cursor
+            Cursor.lockState = CursorLockMode.None; //Unlocks the Cursor
             //Reveal Cursor & Stop Accepting Player Input
         } else
         {
             Time.timeScale = 1f;
             uiManager.pauseScreen.SetActive(false);
+            Cursor.visible = false; //Hides Cursor 
+            Cursor.lockState = CursorLockMode.Locked; //Relocks Cursor
             //Hide Cursor & Start Accepting Input
         }
 
